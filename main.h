@@ -72,6 +72,12 @@ int write_num_helper(int, char *, int, int, int, int, char, char);
 int write_pointer(char *, int, int, int, int, char, char, int);
 int write_unsgnd(int, int, char *, int, int, int, int);
 
+/* utility functions */
+int is_digit(char);
+int is_printable(char);
+int append_hex(char, char *, int);
+long int convert_size_number(long int, int);
+long int convert_size_unsgnd(unsigned long int, int);
 
 #endif /* MAIN_H */
 
