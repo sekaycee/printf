@@ -31,9 +31,9 @@ int is_printable(char c)
  * @ascii: ASCII CODE
  * Return: Always 3
  */
-int append_hex(char ascii, char b[], int i)
+int append_hex(char ascii, char *b, int i)
 {
-	char map[] = "0123456789ABCDEF";
+	char *map = "0123456789ABCDEF";
 	/* The hex code is always 2 digits long */
 	if (ascii < 0)
 		ascii *= -1;
