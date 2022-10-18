@@ -113,7 +113,8 @@ int print_hex_upper(va_list al, char *b, int f, int w, int p, int s)
  * @s: size specifier
  * Return: number of chars printed
  */
-int print_hex(va_list al, char *m, char *b, int f, char fc, int w, int p, int s)
+int print_hex(va_list al, char *m, char *b, int f, char fc,
+	       int w, int p, int s)
 {
 	int i = BUFF_SIZE - 2;
 	unsigned long int num = va_arg(al, unsigned long int);

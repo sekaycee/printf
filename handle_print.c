@@ -12,7 +12,8 @@
  * @s: size specifier
  * Return: 1 or 2
  */
-int handle_print(const char *fmt, int *ind, va_list list, char *b, int f, int w, int p, int s)
+int handle_print(const char *fmt, int *ind, va_list list, char *b,
+	       int f, int w, int p, int s)
 {
 	int i, ul = 0, pc = -1;
 	print_t at[] = {
