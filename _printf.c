@@ -1,6 +1,6 @@
 #include "main.h"
 
-void print_b(char *, int *);
+void print_buffer(char *, int *);
 
 /**
  * _printf - custom printf function
@@ -9,7 +9,7 @@ void print_b(char *, int *);
  */
 int _printf(const char *format, ...)
 {
-	int i, ib = 0; p = 0, pc = 0;
+	int i, ib = 0, p = 0, pc = 0;
 	int flags, width, precision, size;
 	va_list al;
 	char b[BUFF_SIZE];
