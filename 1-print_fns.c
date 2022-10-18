@@ -104,7 +104,7 @@ int print_hex_upper(va_list al, char *b, int f, int w, int p, int s)
 /**
  * print_hex - print a hex number in lower or uppercase
  * @al: list of arguments
- * @map: array of values to map the number to
+ * @m: array of values to map the number to
  * @b: buffer to handle print
  * @f: compute active flags
  * @fc: compute active flags char
