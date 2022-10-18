@@ -122,12 +122,10 @@ int print_hex(va_list al, char *m, char *b, int f, char fc, int w, int p, int s)
 	UNUSED(w);
 
 	num = convert_size_unsgnd(num, s);
-
 	if (num == 0)
 		b[i--] = '0';
 
 	b[BUFF_SIZE - 1] = '\0';
-
 	while (num > 0)
 	{
 		b[i--] = m[num % 16];
@@ -141,7 +139,6 @@ int print_hex(va_list al, char *m, char *b, int f, char fc, int w, int p, int s)
 	}
 
 	i++;
-
 	return (write_unsgnd(0, i, b, f, w, p, s));
 }
 

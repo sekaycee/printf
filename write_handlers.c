@@ -84,8 +84,8 @@ int write_num(int neg, int n, char *b, int f, int w, int p, int s)
  * @xc: extra char
  * Return: number of written chars
  */
-int write_num_helper(int n, char *b, int f, int w, int p, 
-		int l, char pad, char xc)
+int write_num_helper(int n, char *b, int f, int w, int p,
+	       int l, char pad, char xc)
 {
 	int i, ps = 1;
 
@@ -191,7 +191,7 @@ int write_unsgnd(int neg, int n, char *b, int f, int w, int p, int s)
  * @ps: index at which padding should start
  * Return: number of written chars
  */
-int write_pointer(char *b, int n, int l, int w, int f, 
+int write_pointer(char *b, int n, int l, int w, int f,
 		char pad, char xc, int ps)
 {
 	int i;
@@ -223,7 +223,7 @@ int write_pointer(char *b, int n, int l, int w, int f,
 				b[--ps] = xc;
 			b[1] = '0';
 			b[2] = 'x';
-			return (write(1, &b[ps], i - ps) + 
+			return (write(1, &b[ps], i - ps) +
 					write(1, &b[n], l - (1 - ps) - 2));
 		}
 	}

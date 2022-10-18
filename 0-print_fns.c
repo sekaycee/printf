@@ -13,6 +13,7 @@
 int print_char(va_list al, char *b, int f, int w, int p, int s)
 {
 	char c = va_arg(al, int);
+
 	return (write_char_handler(c, b, f, w, p, s));
 }
 
